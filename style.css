@@ -1,25 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: 'Work Sans', sans-serif;
+a:hover{
+    color: rgb(244, 43, 67);
 }
 a{
     text-decoration: none;
     font-weight: 600;
 }
-header img{
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+p{
+    font-weight: 400;
+}
+
+.imgheader{
     padding-bottom: -20px;
     margin-bottom: -20px;
+    width: 10%;
+
 }
 header{
     display: flex;
     align-items:last baseline;
     justify-content: space-around;
     background-color: white;
+    position:fixed;
+    width: 100%;
 }
 nav{
     display: flex;
@@ -30,6 +41,469 @@ nav a{
     margin: 25px;
     color: black;
 }
-a:hover{
+
+.hero{
+    background-image: url(images/img1.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.hero div{
+    margin-top: 17%;
+    margin-left: 17%;
+}
+.hero h1{
+    color: white;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 95px;
+}
+.hero p{
+    font-weight: 200;
+    font-size: 20px;
+    color: white;
+    margin-top: 4%;
+}
+.hero a{
     color: rgb(244, 43, 67);
+    margin-top: 12%;
+    background-color: white;
+    display: flex;
+    width: 50%;
+    padding: 5%;
+    justify-content: center;
+    border-radius: 10px;
+}
+.productrange{
+    height: 110vh;
+    background-color: white;
+}
+.products{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.productrange h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(244, 43, 67);
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 5%;
+}
+.products img{
+    box-shadow: 1px 1px 5px rgba(244, 43, 66, 0.316);
+    margin-top: 60px;
+    height: 42%;
+}
+.products h2{
+    color: rgb(244, 43, 67);
+    margin-top: 50px;
+}
+.products p{
+    color: black;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top: 30px;
+}
+.products a{
+    color: white;
+    background-color: rgb(244, 43, 67);
+    display: flex;
+    margin-top: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 50%;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(73, 0, 0, 0.549)
+}
+
+.ebooks{
+    height: 50vh;
+    background-color: green;
+    background: linear-gradient(45deg, rgb(176, 21, 101),rgb(244, 43, 67), rgb(252, 103, 121) );
+}
+.ebooks h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 48px;
+    padding-top: 3%;
+}
+.ebooks p, .p2{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.ebooks a{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: rgb(244, 43, 67) ;
+    width: 12%;
+    margin-left: 42%;
+    margin-top: 3%;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+}
+.ebooks div{
+    margin-top: 2%;
+}
+
+
+.wemake{
+    background-image: url(images/img2.png);
+    height: 65vh;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wemake h1{
+    margin-left: 57%;
+    margin-top: 10%;
+    color: white;
+    font-size: 75px;
+}
+
+
+.aboutus{
+    display: flex;
+    justify-content: space-evenly;
+    height: 60vh;
+}
+.fondoabout{
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(to top left, rgb(201, 73, 112), rgb(244, 43, 67) );
+    width: 25%;
+    height: 70%;
+    border-radius: 0% 0% 60% 0%;
+    margin-left: 60%;
+}
+.aboutdos, .aboutuno, .abouttres {
+    box-shadow: 1px 1px 5px rgba(244, 43, 66, 0.316);
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+.aboutdos h3, .aboutuno h3, .abouttres h3{
+    font-size: 15px;
+}
+.aboutuno{
+    margin-top: 30%;
+}
+.aboutdos{
+    margin-top: 10%;
+}
+.abouttres{
+    margin-top: 10%;
+}
+.izquierdaabout h1{
+    color: rgb(244, 43, 67);
+    margin-top: 26%;
+    font-size: 45px;
+}
+.izquierdaabout p{
+    margin-top: 10%;
+}
+.derechaabout img{
+    margin-left: -6%;
+    display: flex;
+    position: absolute;
+    z-index: -2;
+}
+
+.reviews{
+    background-color: rgb(255, 244, 246);
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+.tituloreview{
+    display: flex;
+    justify-content: center;
+    color: rgb(244, 43, 67);
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 5%;
+}
+.reviewsbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 4%;
+}
+.reviewsbox h2{
+    color: rgb(244, 43, 67);
+    font-size: 29px;
+}
+.reviewsbox p{
+    margin-top: 7%;
+    text-align: center;
+}
+.pata{
+    margin-left: 8%;
+}
+
+.unique{
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-top: 80vh;
+}
+.unique img{
+    margin-top: 40%;
+}
+.unique h1{
+    color:rgb(244, 43, 67);
+    font-size: 45px;
+    margin-top: 20%;
+}
+.unique p{
+    margin-top: 7%;
+}
+span{
+    color: rgb(244, 43, 67);
+    font-weight: 600;
+}
+
+.warranty{
+    height: 40vh;
+    background: linear-gradient(45deg, rgb(176, 21, 101),rgb(244, 43, 67), rgb(252, 103, 121) );
+}
+.warranty h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding-top: 2%;
+}
+.warranty p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 3%;
+}
+.warranty a{
+    color:rgb(244, 43, 67);
+    background-color: white;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+}
+.warrantybutton{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.contact{
+    height: 100vh;
+}
+form{
+    width: 50vw;
+    height: 100vh;
+    margin-left:27% ;
+    margin-top: 3%;
+}
+.contact h1{
+    color: rgb(244, 43, 67) ;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 37px;
+    font-weight: 600;
+}
+label{
+    display: block;
+}
+.nomem{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.bloque{
+    display: block;
+}
+.nombre input, .email input{
+    width: 80%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(180, 17, 17, 0.549);
+    border-radius: 6px;
+    margin-top: 1%;
+}
+.subject input{
+    width: 90%;
+    padding: 2% 0% 2% 0%;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(180, 17, 17, 0.549);
+    border-radius: 6px;
+    margin-top: 1%;
+}
+.message input{
+    width: 90%;
+    padding-bottom: 30%;
+    box-shadow: 1px 1px 5px rgba(180, 17, 17, 0.549);
+    border: none;
+    border-radius: 6px;
+    margin-top: 1%;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    margin-left: -10%;
+    margin-top: 5%;
+}
+.subject{
+    margin-top: 5%;
+}
+.message{
+    margin-top: 5%;
+}
+.boton button{
+    padding: 2% 8% 2% 8%;
+    border: none;
+    background-color:rgb(244, 43, 67) ;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(180, 17, 17, 0.549);
+    color: white;
+    font-weight: 600;
+}
+
+
+.color{
+    background-image: linear-gradient(20deg, rgb(176, 21, 101),rgb(244, 43, 67), rgb(252, 103, 121) );
+    height: 30vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.color a{
+    margin-left: 2%;
+    color:  white;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+.color img{
+    margin-left: -21%;
+    margin-right: 5%;
+}
+.nocolor{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    color: rgb(244, 43, 67);
+    font-size: 13px;
+}
+
+
+.hero a{
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition: color, 0.2s;
+    transition-timing-function: linear;
+}
+.hero a:hover{
+    background-color: rgb(244, 43, 67);
+    color: white;
+    box-shadow: 1px 1px 5px rgba(180, 17, 17, 0.549);
+}
+.products a{
+    transition: background-color, 0.2s;
+    transition: color, 0.2s;
+    transition-timing-function:linear ;
+}
+.products a:hover{
+    background-color: white;
+    color:rgb(247, 0, 29) ;
+    box-shadow: 1px 1px 5px rgba(139, 4, 4, 0.849);
+}
+.ebooks a{
+    transition: background-color, 0.2s;
+    transition: color, 0.2s;
+    transition-timing-function:linear ;
+}
+.ebooks a:hover{
+    background-color:rgb(244, 43, 67);
+    color:white ;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.549);
+}
+.warranty a{
+    transition: background-color, 0.2s;
+    transition: color, 0.2s;
+    transition-timing-function:linear ;
+}
+.warranty a:hover{
+    background-color:rgb(244, 43, 67);
+    color:white ;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.549);
+}
+.boton button{
+    transition: background-color, 0.2s;
+    transition: color, 0.2s;
+    transition-timing-function:linear ;
+}
+.boton button:hover{
+    background-color: white;
+    color:rgb(247, 0, 29) ;
+    box-shadow: 1px 1px 5px rgba(139, 4, 4, 0.849);
+    cursor: pointer;
+}
+.color a{
+    transition: fontsize, 0.2s;
+
+}
+.color a:hover{
+    font-size: 22px;
+}
+nav a{
+    transition: font-size, 0.2s;
+}
+nav a:hover{
+    font-size: 20px;
+}
+
+
+.warrantyuno{
+    height: 45vh;
+    background-image: linear-gradient(20deg, rgb(176, 21, 101),rgb(244, 43, 67), rgb(252, 103, 121) );
+}
+.warrantyuno h1{
+    color: white;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+}
+.warrantyuno p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+}
+.warrantydos form{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 23%;
+}
+.warrantydos input, select{
+    width: 150%;
+    border: none;
+    padding: 7% 0% 7% 0%;
+    box-shadow: 1px 1px 5px rgba(180, 17, 17, 0.318);
+    border-radius: 10px;
+    margin-top: 5%;
 }
